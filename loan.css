@@ -1,0 +1,76 @@
+*{
+    margin: 0;padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;
+}
+
+
+body{ display: flexbox; 
+    background-image: radial-gradient(pink, rgb(238, 238, 199));
+}
+.loan{  display: flex; flex-direction: row;  flex-wrap: wrap;
+    font-size: 13px; text-align: justify;
+}
+
+h1{
+    text-align: center;font-size: 18px;
+}
+ol{list-style:none ;}
+
+.column{ margin: 10px; box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 25%);
+    width: 20%; height: 420px;
+      border-radius: 20px; flex-grow: 1 ; color: rgb(12, 12, 12);
+     padding-top: 20px;background-color: transparent
+}
+.cred, .criteria, .questions{
+    margin-left:8px; margin-right:8px; 
+}
+.two{
+    text-align: center;
+}
+.three{
+    width: 50%;
+}
+.cred 
+input{display: flex;
+    width: 100%;
+}
+.all{display: flex;flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+.uno input, .due input, .tre input{ width: 100%;}
+.submit{width:50% ; margin-left: 25%;border-radius: 20px;
+     font-weight: bolder; font-size: 14px;
+    align-content: center; height: 40px;background-color: rgb(205, 0, 171);
+    }
+.submit:hover{cursor: pointer; font-size: 18px;
+    background-color: transparent;
+}
+.message{
+    color: crimson;font-size: 12px;
+}
+#userfeed{
+    padding-top: 20px;
+}
+#feeder{
+    margin-left: 11%;font-weight: bolder;
+}
+#feed{background: whitesmoke; border-radius: 20px; text-align: center;
+     width: 80%; box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 25%); padding-top: 10px;
+    color: crimson;font-size: 14px;height:70px; margin-left: 10%; font-weight: bolder;
+}
+.paid{
+    display: none;
+}
+
+@media(max-width:768px){
+    .loan{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        }
+        .one, .two,.three{
+            height: 500px;
+        }
+    }
+
+@media(max-width:320px){
+            .one, .two,.three{
+                height: 600px;
+            }
+        }
