@@ -4,10 +4,20 @@
 
 
 body{ display: flexbox; 
-    background-image: radial-gradient(pink, rgb(238, 238, 199));
+   background-color: rgb(240, 232, 232); color: black; padding-bottom: 5%;
 }
+nav{background-color: black;}
+.navbar{background-color: black; display: flex; flex-wrap: wrap; width: 80%; padding:1% 0;height: auto; justify-content: space-between; 
+    align-content: center; color: white; margin: 0 auto;}
+nav:hover{cursor: pointer;}
+
+.navMain{ font-size: larger; font-weight: 900; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0 4%;}
+.navLil ul{ display: flex;  margin-left: 10%; 
+}
+.navLil li{ list-style: none;margin-left: 5%;  }
+.navLil li:hover{cursor: pointer;}
 .loan{  display: flex; flex-direction: row;  flex-wrap: wrap;
-    font-size: 13px; text-align: justify;
+    font-size: 13px; text-align: justify; width: 60%; margin: 0 auto;
 }
 
 h1{
@@ -15,7 +25,7 @@ h1{
 }
 ol{list-style:none ;}
 
-.column{ margin: 10px; box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 25%);
+.column{ margin: 10px; box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 25%);
     width: 20%; height: 420px;
       border-radius: 20px; flex-grow: 1 ; color: rgb(12, 12, 12);
      padding-top: 20px;background-color: transparent
@@ -23,11 +33,12 @@ ol{list-style:none ;}
 .cred, .criteria, .questions{
     margin-left:8px; margin-right:8px; 
 }
+.criteria li{font-style: italic;}
 .two{
     text-align: center;
 }
 .three{
-    width: 50%;
+    width: 50%; margin: 0 auto; padding-bottom: 30%;
 }
 .cred 
 input{display: flex;
@@ -35,12 +46,12 @@ input{display: flex;
 }
 .all{display: flex;flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
 .uno input, .due input, .tre input{ width: 100%;}
-.submit{width:50% ; margin-left: 25%;border-radius: 20px;
-     font-weight: bolder; font-size: 14px;
+.submit{width:20% ; margin-left: 40%;border-radius: 20px; border: none;
+     font-weight: bolder; font-size: 14px; outline: none;
     align-content: center; height: 40px;background-color: rgb(205, 0, 171);
     }
 .submit:hover{cursor: pointer; font-size: 18px;
-    background-color: transparent;
+    opacity: 0.9;
 }
 .message{
     color: crimson;font-size: 12px;
@@ -49,11 +60,11 @@ input{display: flex;
     padding-top: 20px;
 }
 #feeder{
-    margin-left: 11%;font-weight: bolder;
+    margin-left: 27%;font-weight: bolder;
 }
 #feed{background: whitesmoke; border-radius: 20px; text-align: center;
-     width: 80%; box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 25%); padding-top: 10px;
-    color: crimson;font-size: 14px;height:70px; margin-left: 10%; font-weight: bolder;
+     width: 50%; box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 25%); padding-top: 10px;
+    color: crimson;font-size: 14px;height:70px; margin: 0 auto; font-weight: bolder;
 }
 .paid{
     display: none;

@@ -143,10 +143,10 @@ function validateLoan(){
         console.log(point)
     if(point < 30){
        
-        message= `We are sorry dear ${first.value}, you are not qualified for this loan` 
+        message= `We are sorry dear ${first.value.toUppercase()}, you are not qualified for this loan` 
     }else if(parseFloat(loanAmount.value)<= possibleLoanAmount)
         {
-        message = ` Congratulations dear ${first.value} , you are qualified for this loan.
+        message = ` Congratulations dear ${first.value.toUppercase()} , you are qualified for this loan.
         Your application is being processed, Kindly Come along with your valid means of 
         identification to the bank to complete this process`
     }

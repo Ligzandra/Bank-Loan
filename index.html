@@ -8,6 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <div class="navbar"> 
+            <div class="navMain">LOAN APPLICATION</div>
+        <div class="navLil">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <br><br>
     <div class="loan">
         <div class="column one">
            <div class="criteria">
@@ -45,76 +58,80 @@
             </div>
         </div>   
 
-        <div class="column three">
-          <div class="questions">
-              <h1>APPLICATION FORM</h1>
-            <div class="all">
-                <div class="uno">
-                    <label class="annual">What is your annnual salary? </label><br>
-                    <input type="number" class="annual1" id="annual" ><br>
-                    <p id="annualmessage" class="message"></p>
-                </div>
-                
-    
-                <div class="due">
-                    <label class="percent">What is the loan Amount Required? </label><br>
-                <input type="number" class="access1" id="amount"><br>
-                <p id="amountmessage" class="message"></p>
-                </div>
-                
-    
-                <div class="tre">
-                    <label class="current">What is your current account balance? </label><br>
-                <input type="number" class="current1" id="current"><br>
-                <p id="currentmessage" class="message"></p>
-                </div>
-                
-            </div><br>
-
-            <p>Are you in receipt of or have you had to collect any loan from this bank in the last 6 months?</p>
-            <input type="radio" name="receipt" 
-            value="yes" id="yes_receipt"  class="receipt" onclick="showHideDiv()"><label for="yes_receipt">Yes</label>
-            <input type="radio" name="receipt" 
-            value="no" id="no_receipt"  class="receipt" onclick="showHideDiv()" ><label for="no_receipt">No</label><br>
-            <p id="receiptmessage" class="message"></p><br>
-           
-          <div class="paid" id="paid">
-            <p>Have you paid back the loan collected?</p>
-            <input type="radio"  name="creditHistory" 
-             value="yes" class="receipt"><label for="receipt">yes</label>
-             <input type="radio"  name="creditHistory" 
-             value="no" class="receipt"><label for="receipt">No</label><br>
-             <p id="creditHistorymessage" class="message"></p><br>
- 
-          </div>
-            <p>Have you had any deposits into your account within the last 30days?</p>
-            <input type="radio" name="deposit" 
-            value="yes" id="yes_deposit" class="deposit"><label for="deposit">Yes</label>
-            <input type="radio"  name="deposit" 
-            value="no" class="deposit"><label for="deposit">No</label><br>
-            <p id="depositmessage" class="message"></p><br>
-            
-
-            <p>When given this loan, are you able to pay back within the next 6 months?</p>
-            <input type="radio"  name="repay" 
-            value="yes" id="repay" class="repay"><label for="repay">Yes</label>
-            <input type="radio"  name="repay" 
-            value="no" class="repay"><label for="repay">No</label><br>
-            <p id="repaymessage" class="message"></p><br>
-
-            <p>Do you have an account with us? if yes, select account type. If no, <a href="#">Click Here</a> </p>
-            <input type="radio" id="savings" name="accountType" 
-            value="savings" ><label for="savings">Savings</label>
-            <input type="radio" id="savings" name="accountType" 
-            value="current" ><label for="savings">Current</label><br>
-            <p id="accountTypemessage" class="message"></p><br>
-           
-
-          </div>
-        </div>
-        <button id="submit" class="submit" type="submit">SUBMIT</button><br><br>
+       
+      
         
     </div>
+    <br><br>
+    <div class="column three">
+        <div class="questions">
+            <h1>APPLICATION FORM</h1>
+          <div class="all">
+              <div class="uno">
+                  <label class="annual">What is your annnual salary? </label><br>
+                  <input type="number" class="annual1" id="annual" ><br>
+                  <p id="annualmessage" class="message"></p>
+              </div>
+              
+  
+              <div class="due">
+                  <label class="percent">What is the loan Amount Required? </label><br>
+              <input type="number" class="access1" id="amount"><br>
+              <p id="amountmessage" class="message"></p>
+              </div>
+              
+  
+              <div class="tre">
+                  <label class="current">What is your current account balance? </label><br>
+              <input type="number" class="current1" id="current"><br>
+              <p id="currentmessage" class="message"></p>
+              </div>
+              
+          </div><br>
+
+          <p>Are you in receipt of or have you had to collect any loan from this bank in the last 6 months?</p>
+          <input type="radio" name="receipt" 
+          value="yes" id="yes_receipt"  class="receipt" onclick="showHideDiv()"><label for="yes_receipt">Yes</label>
+          <input type="radio" name="receipt" 
+          value="no" id="no_receipt"  class="receipt" onclick="showHideDiv()" ><label for="no_receipt">No</label><br>
+          <p id="receiptmessage" class="message"></p><br>
+         
+        <div class="paid" id="paid">
+          <p>Have you paid back the loan collected?</p>
+          <input type="radio"  name="creditHistory" 
+           value="yes" class="receipt"><label for="receipt">yes</label>
+           <input type="radio"  name="creditHistory" 
+           value="no" class="receipt"><label for="receipt">No</label><br>
+           <p id="creditHistorymessage" class="message"></p><br>
+
+        </div>
+          <p>Have you had any deposits into your account within the last 30days?</p>
+          <input type="radio" name="deposit" 
+          value="yes" id="yes_deposit" class="deposit"><label for="deposit">Yes</label>
+          <input type="radio"  name="deposit" 
+          value="no" class="deposit"><label for="deposit">No</label><br>
+          <p id="depositmessage" class="message"></p><br>
+          
+
+          <p>When given this loan, are you able to pay back within the next 6 months?</p>
+          <input type="radio"  name="repay" 
+          value="yes" id="repay" class="repay"><label for="repay">Yes</label>
+          <input type="radio"  name="repay" 
+          value="no" class="repay"><label for="repay">No</label><br>
+          <p id="repaymessage" class="message"></p><br>
+
+          <p>Do you have an account with us? if yes, select account type. If no, <a href="#">Click Here</a> </p>
+          <input type="radio" id="savings" name="accountType" 
+          value="savings" ><label for="savings">Savings</label>
+          <input type="radio" id="savings" name="accountType" 
+          value="current" ><label for="savings">Current</label><br>
+          <p id="accountTypemessage" class="message"></p><br>
+         
+
+        </div>
+      </div>
+      <br><br>
+      <button id="submit" class="submit" type="submit">SUBMIT</button><br><br>
 
     <div id="userfeed">
         <label for="" id="feeder" >FEEDBACK: </label>
